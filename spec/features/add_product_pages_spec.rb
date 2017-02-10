@@ -10,4 +10,9 @@ describe "the add a product process" do
     click_on 'Create Product'
     expect(page).to have_content "Reese's"
   end
+  it "gives error when no title is entered" do
+    visit new_product_path
+    click_on 'Create Product'
+    expect(page).to have_content 'errors'
+  end
 end
