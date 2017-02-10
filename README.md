@@ -1,24 +1,39 @@
-# README
+# _Gummy Bear Kingdom_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Input products for company, 2/10/2017_
 
-Things you may want to cover:
+#### By _**Margie Nevarez**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_This application allows a user to input a product and save it to a database. Products have a name, cost, and country of origin property. The user is able to view, edit and remove products._
 
-* Configuration
+## Prerequisites
 
-* Database creation
+You will need the following things properly installed on your computer.
 
-* Database initialization
+* [Git](https://git-scm.com/)
+* Ruby
+* Postgres
+* Rails
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running / Development
+* Enter the following commands in terminal:
+* `git clone <https://github.com/margie-ynm/gummy-bear-kingdom.git>` this repository
+* `cd gummy-bear-kingdom`
+* start running `postgres`
+* `rails db:create`
+* `rails db:migrate`
+* `rails db:test:prepare`
+* `rails server`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
 
-* Deployment instructions
 
-* ...
+## Support and contact details
+
+_Github for Margie Nevarez: margie-ynm_
+
+### License
+
+Copyright (c) 2016 **_Margie Nevarez_**
