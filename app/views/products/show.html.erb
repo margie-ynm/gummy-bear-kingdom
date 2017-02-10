@@ -4,3 +4,6 @@
 <h4> <%= @product.cost %> </h4>
 
 <%= link_to "Edit", edit_product_path(@product) %>
+<%= link_to "Delete", product_path(@product),
+                      :data => {:confirm => "Are you sure you want to remove this product?",
+                        :method => "delete"}%>
