@@ -1,11 +1,12 @@
 <%= render "layouts/errors", :object => @product %>
-
-<%= form_for @product do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :country %>
-  <%= f.text_field :country %>
-  <%= f.label :cost %>
-  <%= f.text_field :cost %>
-  <%= f.submit %>
+<div class="well">
+  <%= form_for @product do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.label :country %>
+    <%= f.text_field :country, class: 'form-control' %>
+    <%= f.label :cost %>
+    <%= f.text_field :cost, class: 'form-control' %>
+    <%= f.submit class: 'btn btn-success'%>
+  </div>
 <% end %>

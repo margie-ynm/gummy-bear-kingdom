@@ -1,7 +1,16 @@
 <h1>Products</h1>
-
+<div class="well">
+  <% if @products.any? %>
 <% @products.each do |product| %>
 <h4> <%= link_to product.name, product_path(product) %> </h4>
 <% end %>
+<% else %>
+<p>
+  Currently, there are no products at Gummy Bear Kingdom.
+</p>
+<% end %>
+</div>
 
-<%= link_to "Add a new product", new_product_path %>
+<div class="well-link">
+  <%= link_to "Add a new product", new_product_path  %>
+</div>
